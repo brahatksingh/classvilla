@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1014937880038",
+    "project_id": "classvilla-d75bb",
+    "storage_bucket": "classvilla-d75bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014937880038:android:baaef040b891680e760227",
+        "android_client_info": {
+          "package_name": "com.brewingkotlin.classvilla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014937880038-oegmv40q2vmkkdnf8793od4lt2rgjodn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brewingkotlin.classvilla",
+            "certificate_hash": "ad178272c0754235288d3ebc2062dcf530205068"
+          }
+        },
+        {
+          "client_id": "1014937880038-voruqq2m4g5o9gt5s8qmdjqm0v7p7ajc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDa8hIS0zYZERa9WRZ9U_40mb6R9gTCUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014937880038-voruqq2m4g5o9gt5s8qmdjqm0v7p7ajc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
