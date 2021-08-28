@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Classvilla</string>
+    <string-array name="spinner_entries_studentorteacher">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
 </resources>
