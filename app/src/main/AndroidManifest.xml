@@ -12,13 +12,20 @@
         <activity android:name=".SignUpActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
+
         <activity
             android:name=".SignInActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         </activity>
+
         <activity android:name=".StudentHomePage"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
+
+        <activity android:name=".TeacherHomePage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

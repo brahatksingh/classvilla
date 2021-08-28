@@ -75,24 +75,24 @@
         app:layout_constraintTop_toBottomOf="@+id/tvClasses" />
 
     <TextView
-        android:id="@+id/tvTeachers"
+        android:id="@+id/tvStudents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="serif"
-        android:text="Teachers"
+        android:text="Students"
         android:textColor="@color/secondaryColor"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/rvTeachers"
+        app:layout_constraintBottom_toTopOf="@+id/rvStudents"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rvSubjects">
 
     </TextView>
 
     <TextView
-        android:id="@+id/tvTeachersList"
+        android:id="@+id/tvStudentsList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -102,20 +102,20 @@
         android:textSize="15sp"
         android:textStyle="italic|bold"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/rvTeachers"
+        app:layout_constraintBottom_toTopOf="@+id/rvStudents"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rvSubjects">
 
     </TextView>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvTeachers"
+        android:id="@+id/rvStudents"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTeachers">
+        app:layout_constraintTop_toBottomOf="@+id/tvStudents">
 
     </androidx.recyclerview.widget.RecyclerView>
 
