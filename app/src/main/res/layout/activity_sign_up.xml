@@ -32,7 +32,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_imgv_userdp" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_imgv_userdp"
+        android:paddingLeft="15dp"/>
 
     <EditText
         android:id="@+id/signup_etv_email"
@@ -47,7 +48,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_name" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_etv_name"
+        android:paddingLeft="15dp"/>
 
     <EditText
         android:id="@+id/signup_etv_password"
@@ -62,7 +64,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_email" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_etv_email"
+        android:paddingLeft="15dp"/>
 
     <EditText
         android:id="@+id/signup_etv_number"
@@ -77,7 +80,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_password" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_etv_password"
+        android:paddingLeft="15dp"/>
 
     <EditText
         android:id="@+id/signup_etv_about"
@@ -93,7 +97,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_number" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_etv_number"
+        android:paddingLeft="15dp"/>
 
     <Spinner
         android:id="@+id/spinner_studentorteacher"
@@ -107,13 +112,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_about" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_etv_about"
+        android:paddingLeft="10dp"/>
 
     <Button
         android:id="@+id/signup_btn_signupgoogle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primaryColor"
+        android:drawableLeft="@drawable/googleicon"
         android:text="SIGN UP WITH GOOGLE"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
