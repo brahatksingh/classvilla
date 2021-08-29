@@ -9,21 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Classvilla">
-        <activity android:name=".SignUpActivity"
+        <activity android:name=".Activities.SignUpActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
 
         <activity
-            android:name=".SignInActivity"
+            android:name=".Activities.SignInActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-        </activity>
-
-        <activity android:name=".StudentHomePage"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
-
-        <activity android:name=".TeacherHomePage"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
 
         <activity android:name=".MainActivity">
