@@ -13,7 +13,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
+<<<<<<< HEAD
         tools:layout_editor_absoluteY="39dp" />
+=======
+        tools:layout_editor_absoluteY="39dp"
+        />
+>>>>>>> 116a985cebf681e002e51f56845ef8186b5d9e29
 
     <EditText
         android:id="@+id/signin_etv_email"

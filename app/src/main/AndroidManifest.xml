@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Classvilla">
         <activity android:name=".SignUpActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
         <activity
             android:name=".SignInActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+<<<<<<< HEAD
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
@@ -22,6 +25,29 @@
     </activity>
         <activity android:name=".MainActivity" />
 
+=======
+        </activity>
+
+        <activity android:name=".StudentHomePage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".TeacherHomePage"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+>>>>>>> 116a985cebf681e002e51f56845ef8186b5d9e29
     </application>
 
 </manifest>
