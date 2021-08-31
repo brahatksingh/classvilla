@@ -35,7 +35,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_imgv_userdp" />
+        app:layout_constraintTop_toBottomOf="@+id/signup_imgv_userdp"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/email"
@@ -118,21 +119,20 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primaryColor"
         android:text="SIGN UP WITH GOOGLE"
-        android:textColor="#ffffff"
- />
+        android:textColor="#ffffff" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="horizontal"
->
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15dp"
-            android:text="Already Registered?"/>
+            android:text="Already Registered?" />
+
         <Button
             android:id="@+id/signin"
             android:layout_width="wrap_content"
@@ -147,7 +147,6 @@
             app:layout_constraintTop_toTopOf="@+id/signup_btn_signupgoogle" />
 
     </LinearLayout>
-
 
 
 </LinearLayout>

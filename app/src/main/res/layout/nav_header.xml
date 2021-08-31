@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="124dp"
+        android:src="@drawable/logo"
+        >
+
+    </ImageView>
+
+
+</LinearLayout>

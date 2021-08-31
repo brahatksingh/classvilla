@@ -12,6 +12,6 @@ data class Teacher(
     constructor() : this("","","","","","")
 
     constructor(name: String,email: String, imageUrl: String, about: String, uid: String) :
-            this(name,email,imageUrl,about,"Student",uid = uid)
+            this(name,email,imageUrl,about,"Teacher",uid = uid)
 
 }

@@ -20,4 +20,19 @@
         android:title="Profile"
         android:icon="@drawable/ic_profile">
     </item>
+    <item
+        android:id="@+id/bnvPrivacy"
+        android:title="Privacy and Policy"
+        android:icon="@drawable/ic_profile">
+    </item>
+    <item
+        android:id="@+id/bnvHelp"
+        android:title="Help"
+        android:icon="@drawable/ic_profile">
+    </item>
+    <item
+        android:id="@+id/bnvLogout"
+        android:title="Logout"
+        android:icon="@drawable/ic_profile">
+    </item>
 </menu>

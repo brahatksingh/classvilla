@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
+import com.brewingkotlin.classvilla.MainActivity
 import com.brewingkotlin.classvilla.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_sign_in.*
@@ -18,7 +19,7 @@ class SignInActivity : AppCompatActivity() {
 
 
         signup.setOnClickListener {
-            val intent= Intent(applicationContext,SignInActivity::class.java)
+            val intent= Intent(applicationContext,SignUpActivity::class.java)
             startActivity(intent)
         }
 
@@ -41,7 +42,7 @@ class SignInActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email.text.toString(),password.text.toString())
                 .addOnCompleteListener{
                     if(it.isSuccessful){
-                        startActivity(Intent(this,SignUpActivity::class.java))
+                        startActivity(Intent(this, MainActivity::class.java))
                         finish()
                     }
                     else{

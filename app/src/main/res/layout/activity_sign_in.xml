@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/signin_etv_email" />
 
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/signin"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:backgroundTint="@color/primaryColor"
@@ -71,7 +71,7 @@
             android:textSize="15dp"
             android:text="Don't have an account?"/>
         <Button
-            android:id="@+id/signin"
+            android:id="@+id/signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/primaryColor"

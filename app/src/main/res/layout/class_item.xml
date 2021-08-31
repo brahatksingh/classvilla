@@ -2,38 +2,51 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view = "http://schemas.android.com/apk/res-auto"
     android:layout_width = "match_parent"
-    card_view:cardCornerRadius = "4dp"
     android:id ="@+id/card"
     android:layout_margin = "10dp"
     android:layout_height = "150dp">
-    <LinearLayout
-        android:id = "@+id/parent"
-        android:layout_gravity = "center"
-        android:layout_width = "match_parent"
-        android:orientation = "vertical"
-        android:gravity = "center"
-        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/subject"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="SUBJECT NAME"
-            android:textColor="#0C0C0C"
-            android:textSize="25sp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="8dp"
+
+        >
+        <LinearLayout
+            android:id = "@+id/parent"
+            android:layout_gravity = "center"
+            android:layout_width = "match_parent"
+            android:orientation = "vertical"
+            android:background="@drawable/cardpic1"
+            android:gravity = "center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/roboto"
+                android:text="SUBJECT NAME"
+                android:textStyle="bold"
+                android:textColor="#F8FAFA"
+                android:textSize="25sp" />
 
 
-        <TextView
-            android:id="@+id/teacher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="   Teacher name   "
-            android:layout_marginTop="50dp"
-            android:layout_gravity="bottom|right"
-            android:textColor="#0C0C0C"
-            android:textSize="15sp" />
+            <TextView
+                android:id="@+id/teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto"
+                android:text="   Teacher name   "
+                android:layout_marginTop="50dp"
+                android:layout_gravity="bottom|right"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
 
-    </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </androidx.cardview.widget.CardView>

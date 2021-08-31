@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment"
-    >
+    tools:context=".HomeFragment">
 
     <TextView
         android:id="@+id/tvClasses"
@@ -40,14 +39,14 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/homefragment_rv_rooms"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
-
-        tools:listitem="@layout/class_item"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/tvStudents"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvClasses"
-        app:layout_constraintBottom_toTopOf="@id/tvStudents"/>
+        tools:listitem="@layout/class_item" />
 
     <!--We will change the orientation when we set the Layout Manager-->
 
@@ -85,7 +84,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvStudents"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+      tools:listitem="@layout/user_profile"
+        android:orientation="horizontal"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +94,6 @@
         app:layout_constraintTop_toBottomOf="@+id/tvStudents">
 
         <!--This RV will use a staggered layout Manager.-->
-
     </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
