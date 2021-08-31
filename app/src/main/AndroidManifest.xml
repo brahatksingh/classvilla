@@ -9,22 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Classvilla">
-        <activity android:name=".Activities.SignUpActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        </activity>
-
-        <activity
-            android:name=".Activities.SignInActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-        </activity>
-
-        <activity android:name=".MainActivity">
+        <activity android:name=".splash"
+            android:theme="@style/splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Activities.SignUpActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".Activities.SignInActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
