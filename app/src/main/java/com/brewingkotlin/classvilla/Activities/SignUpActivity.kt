@@ -52,7 +52,7 @@ class SignUpActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener{
         val email1=email.text.toString()
         val about1=about.text.toString()
         val number=phone.text.toString()
-        signupbtn.setOnClickListener{
+        signup.setOnClickListener{
             if(TextUtils.isEmpty(name.text.toString())){
                 name.setError("Mandatory Field") }
             else if(TextUtils.isEmpty(email.text.toString())){
@@ -89,7 +89,7 @@ class SignUpActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener{
         val email1=email.text.toString()
         val about1=about.text.toString()
         val number=phone.text.toString()
-        signupbtn.setOnClickListener{
+        signup.setOnClickListener{
             if(TextUtils.isEmpty(name.text.toString())){
                 name.setError("Mandatory Field") }
             else if(TextUtils.isEmpty(email.text.toString())){
