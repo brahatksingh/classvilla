@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.SearchFragment">
+    android:padding="8dp"
+    tools:context=".Fragments.Search.SearchFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <EditText
+        android:id="@+id/searchFragment_etv"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="2dp"
+        android:hint="Enter User "
+        app:layout_constraintBottom_toTopOf="@+id/searchFragmentRV"
+        app:layout_constraintEnd_toStartOf="@+id/searchFragment_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/searchFragment_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:drawableTop="@drawable/ic_baseline_check_24"
+        app:layout_constraintBottom_toBottomOf="@+id/searchFragment_etv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/searchFragment_etv"
+        app:layout_constraintTop_toTopOf="@+id/searchFragment_etv" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchFragmentRV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchFragment_etv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

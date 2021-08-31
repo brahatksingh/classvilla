@@ -1,10 +1,11 @@
-package com.brewingkotlin.classvilla
+package com.brewingkotlin.classvilla.Fragments.Assignments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.brewingkotlin.classvilla.R
 
 
 class AssignmentsFragment : Fragment() {

@@ -1,9 +1,10 @@
-package com.brewingkotlin.classvilla
+package com.brewingkotlin.classvilla.Fragments.Home
 
 import android.app.AlertDialog
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import com.brewingkotlin.classvilla.R
 
 class HomeFragment : Fragment() {
 
