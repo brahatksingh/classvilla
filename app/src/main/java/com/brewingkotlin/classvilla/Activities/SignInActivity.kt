@@ -34,9 +34,11 @@ class SignInActivity : AppCompatActivity() {
 
             if(TextUtils.isEmpty(email.text.toString())){
                 email.error = "Mandatory Field"
+                email.requestFocus()
             }
             else if(TextUtils.isEmpty(password.text.toString())){
                 password.error = "Mandatory Field"
+                password.requestFocus()
             }
 
             auth.signInWithEmailAndPassword(email.text.toString(),password.text.toString())

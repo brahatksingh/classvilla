@@ -59,15 +59,25 @@ class SignUpActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener{
         val number= phone.text.toString()
         signup.setOnClickListener{
             if(TextUtils.isEmpty(name.text.toString())){
-                name.setError("Mandatory Field") }
+                name.setError("Mandatory Field")
+                name.requestFocus()
+            }
             else if(TextUtils.isEmpty(email.text.toString())){
-                email.setError("Mandatory Field")}
+                email.setError("Mandatory Field")
+                email.requestFocus()
+            }
             else if(TextUtils.isEmpty(about.text.toString())){
-                about.setError("Mandatory Field")}
+                about.setError("Mandatory Field")
+                about.requestFocus()
+            }
             else if(TextUtils.isEmpty(password.text.toString())){
-                password.setError("Mandatory Field")}
+                password.setError("Mandatory Field")
+                password.requestFocus()
+            }
             else if(TextUtils.isEmpty(phone.text.toString())){
-                phone.setError("Mandatory Field")}
+                phone.setError("Mandatory Field")
+                phone.requestFocus()
+            }
             auth.createUserWithEmailAndPassword(email.text.toString(),password.text.toString())
                 .addOnCompleteListener {
                     if(it.isSuccessful){
@@ -75,7 +85,6 @@ class SignUpActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener{
                         val currentUserDb=databaseReferenceTeacher?.child((currentUser?.uid!!))
                     currentUserDb?.child(currentUser?.uid!!)?.setValue(
                         User(name1,email1,"",about1,"Student",number,currentUser?.uid!!))
-
                         Toast.makeText(this,"Registration successful",Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this,MainActivity::class.java))
                         finish()
