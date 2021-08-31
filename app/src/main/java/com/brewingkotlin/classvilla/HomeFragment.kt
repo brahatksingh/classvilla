@@ -21,7 +21,7 @@ class HomeFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId) {
             R.id.mainactivity_search -> {
-                // Navigate to Seach Fragment
+                // Navigate to Search Fragment
             }
             R.id.mainactivity_calendar -> {
                 val builder = AlertDialog.Builder(requireContext())
