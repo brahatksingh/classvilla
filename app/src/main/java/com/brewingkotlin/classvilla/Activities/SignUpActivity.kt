@@ -36,6 +36,11 @@ class SignUpActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener{
             ArrayAdapter<Any?>(this, android.R.layout.simple_spinner_item, options)
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = aa
+
+        signup.setOnClickListener {
+            val intent=Intent(applicationContext,SignUpActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
@@ -49,10 +54,10 @@ class SignUpActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener{
     private fun registerTeacher() {
 
         val name1= name.text.toString()
-        val email1=email.text.toString()
-        val about1=about.text.toString()
-        val number=phone.text.toString()
-        signupbtn.setOnClickListener{
+        val email1= email.text.toString()
+        val about1= about.text.toString()
+        val number= phone.text.toString()
+        signup.setOnClickListener{
             if(TextUtils.isEmpty(name.text.toString())){
                 name.setError("Mandatory Field") }
             else if(TextUtils.isEmpty(email.text.toString())){
@@ -89,7 +94,7 @@ class SignUpActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener{
         val email1=email.text.toString()
         val about1=about.text.toString()
         val number=phone.text.toString()
-        signupbtn.setOnClickListener{
+        signup.setOnClickListener{
             if(TextUtils.isEmpty(name.text.toString())){
                 name.setError("Mandatory Field") }
             else if(TextUtils.isEmpty(email.text.toString())){
