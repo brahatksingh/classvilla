@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="136dp"
+        android:fontFamily="@font/roboto"
+        android:text="Profile"
+        android:textColor="@color/secondaryColor"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/ibEditPicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivUserPicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/images"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintStart_toStartOf="@+id/tvUsername"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfile" />
+
+    <ImageButton
+        android:id="@+id/ibEditPicture"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="54dp"
+        android:background="#0000ffff"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintBottom_toTopOf="@+id/ibEditUsername"
+        app:layout_constraintEnd_toStartOf="@+id/ibEditUsername"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfile"></ImageButton>
+
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="253dp"
+        android:layout_marginBottom="58dp"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintBottom_toBottomOf="@+id/ivEmail"
+        app:layout_constraintEnd_toStartOf="@+id/ibEditUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibEditPicture"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="34dp"
+        android:hint="Username"
+
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvUserEmail"
+        app:layout_constraintEnd_toEndOf="parent"></TextView>
+
+    <ImageButton
+        android:id="@+id/ibEditUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="37dp"
+        android:background="#0000ffff"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toTopOf="@+id/ivEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivProfile"
+        app:layout_constraintTop_toBottomOf="@+id/ibEditPicture"></ImageButton>
+
+    <ImageView
+        android:id="@+id/ivEmail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="26dp"
+        android:src="@drawable/ic_email"
+        app:layout_constraintBottom_toTopOf="@+id/ivPhone"
+        app:layout_constraintEnd_toStartOf="@+id/tvUserEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibEditUsername"></ImageView>
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="26dp"
+        android:hint="User e-mail id"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvUserPhNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivEmail"></TextView>
+
+    <ImageView
+        android:id="@+id/ivPhone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="65dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintEnd_toStartOf="@+id/tvUserPhNo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivEmail"></ImageView>
+
+    <TextView
+        android:id="@+id/tvUserPhNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="24dp"
+        android:hint="User phone number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ibEditAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPhone"></TextView>
+
+    <ImageView
+        android:id="@+id/ivAbout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="253dp"
+        android:src="@drawable/ic_about"
+        app:layout_constraintEnd_toStartOf="@+id/ibEditAbout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPhone"></ImageView>
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="200dp"
+        android:hint="About.."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserPhNo"></TextView>
+
+    <ImageButton
+        android:id="@+id/ibEditAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="102dp"
+        android:background="#0000ffff"
+
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></ImageButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
