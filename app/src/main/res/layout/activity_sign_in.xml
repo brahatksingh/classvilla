@@ -77,8 +77,9 @@
             android:backgroundTint="@color/primaryColor"
             android:text="CREATE ONE"
             android:textColor="#ffffff"
-            />
+
+  />
 
 
-    </LinearLayout>
+</LinearLayout>
 </LinearLayout>

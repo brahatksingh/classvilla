@@ -119,14 +119,13 @@
         android:backgroundTint="@color/primaryColor"
         android:text="SIGN UP WITH GOOGLE"
         android:textColor="#ffffff"
-        />
+ />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"

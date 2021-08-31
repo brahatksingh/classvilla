@@ -36,6 +36,11 @@ class SignUpActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener{
             ArrayAdapter<Any?>(this, android.R.layout.simple_spinner_item, options)
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = aa
+
+        signup.setOnClickListener {
+            val intent=Intent(applicationContext,SignUpActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
