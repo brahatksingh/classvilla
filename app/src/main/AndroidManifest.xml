@@ -9,8 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Classvilla">
+<<<<<<< HEAD
+        <activity android:name=".UserProfile"></activity>
+        <activity
+            android:name=".Activities.SignUpActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".Activities.SignInActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".MainActivity">
+=======
         <activity android:name=".splash"
             android:theme="@style/splash">
+>>>>>>> 6ba7cabde6599f9bda2ce8cb53282c4440861bec
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
