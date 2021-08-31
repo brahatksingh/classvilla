@@ -62,18 +62,23 @@ class SignUpActivity : AppCompatActivity() , AdapterView.OnItemSelectedListener{
 
             if(TextUtils.isEmpty(name.text.toString())){
                 name.error = "Mandatory Field"
+                requestFocus()
             }
             else if(TextUtils.isEmpty(email.text.toString())){
                 email.error = "Mandatory Field"
+                requestFocus()
             }
             else if(TextUtils.isEmpty(about.text.toString())){
                 about.error = "Mandatory Field"
+                requestFocus()
             }
             else if(TextUtils.isEmpty(password.text.toString())){
                 password.error = "Mandatory Field"
+                requestFocus()
             }
             else if(TextUtils.isEmpty(phone.text.toString())){
                 phone.error = "Mandatory Field"
+                requestFocus()
             }
             else{
                 spinner.onItemSelectedListener=this
