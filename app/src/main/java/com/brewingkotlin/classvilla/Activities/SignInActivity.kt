@@ -13,24 +13,24 @@ import kotlinx.android.synthetic.main.activity_sign_in.*
 class SignInActivity : AppCompatActivity() {
 
     lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
-
-
-        signup.setOnClickListener {
-            val intent= Intent(applicationContext,SignInActivity::class.java)
-            startActivity(intent)
+        auth= FirebaseAuth.getInstance()
+        signin_signin.setOnClickListener {
+            login()
         }
 
+        signin.setOnClickListener {
+            startActivity(Intent(this,SignUpActivity::class.java))
+            finish()
+        }
 
-        auth= FirebaseAuth.getInstance()
-        login()
     }
 
-    fun login(){
+    fun login()  {
 
-        signin.setOnClickListener{
 
             if(TextUtils.isEmpty(email.text.toString())){
                 email.error = "Mandatory Field"
@@ -48,9 +48,8 @@ class SignInActivity : AppCompatActivity() {
                         finish()
                     }
                     else{
-                        Toast.makeText(this,"login failed",Toast.LENGTH_SHORT).show()
-                    }
+                        Toast.makeText(this,"Login Failed",Toast.LENGTH_SHORT).show()
                 }
         }
     }
-    }
+}

@@ -21,10 +21,13 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.fragment_search.*
 
 class SearchFragment : Fragment() {
+
     lateinit var auth: FirebaseAuth
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
         // Inflate the layout for this fragment
+
         auth= FirebaseAuth.getInstance()
         val main_list = mutableListOf<User?>()
         val mDatabase :FirebaseDatabase = Firebase.database("https://classvilla-d75bb-default-rtdb.asia-southeast1.firebasedatabase.app")
@@ -38,6 +41,7 @@ class SearchFragment : Fragment() {
                     val tempuserobj = dataSnapshot.getValue(User::class.java)
                     main_list.add(tempuserobj)
                 }
+
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -52,8 +56,7 @@ class SearchFragment : Fragment() {
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 val gotList = snapshot.children
-                gotList.forEach{
-                        dataSnapshot ->
+                gotList.forEach{ dataSnapshot ->
                     val tempuserobj = dataSnapshot.getValue(User::class.java)
                     main_list.add(tempuserobj)
                 }
@@ -65,13 +68,11 @@ class SearchFragment : Fragment() {
 
         })
 
-        // TODO Set Adapter for Search,Manager and DataList
         val rv = searchFragmentRV
         val adapter = SearchAdapter()
         adapter.setData(main_list)
         rv.adapter = adapter
         rv.layoutManager = LinearLayoutManager(context)
-
 
         val etv = searchFragment_etv
         val btn = searchFragment_btn

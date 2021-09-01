@@ -20,7 +20,8 @@
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         android:src="@drawable/defaultavatar"
-        app:shapeAppearanceOverlay="@style/RoundedImageView" />
+        app:shapeAppearanceOverlay="@style/RoundedImageView"
+        android:layout_marginBottom="64dp"/>
 
 
     <EditText
@@ -30,13 +31,10 @@
         android:layout_margin="8dp"
         android:background="@drawable/custom_input"
         android:ems="10"
+        android:paddingStart="4dp"
         android:hint="Name"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/signup_etv_email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_imgv_userdp" />
+         />
 
     <EditText
         android:id="@+id/email"
@@ -45,43 +43,34 @@
         android:layout_margin="8dp"
         android:background="@drawable/custom_input"
         android:ems="10"
+        android:paddingStart="4dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/signup_etv_password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_name" />
+        />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_margin="8dp"
+        android:paddingStart="4dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/signup_etv_number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_email" />
+          />
 
     <EditText
         android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_margin="8dp"
+        android:paddingStart="4dp"
         android:background="@drawable/custom_input"
         android:ems="10"
         android:hint="Phone Number"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/signup_etv_about"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_password" />
+        />
 
     <EditText
         android:id="@+id/about"
@@ -90,43 +79,38 @@
         android:layout_margin="8dp"
         android:background="@drawable/custom_input"
         android:ems="10"
+        android:paddingStart="4dp"
         android:hint="About"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toTopOf="@+id/spinner_studentorteacher"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_number" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/custom_spinner"
-        android:entries="@array/spinner_entries_studentorteacher"
-        app:layout_constraintBottom_toTopOf="@+id/signup_btn_signupgoogle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_etv_about" />
+         />
 
     <Button
         android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/primaryColor"
-        android:text="SIGN UP WITH GOOGLE"
+        android:text="SIGN UP AS A STUDENT"
         android:textColor="#ffffff"
- />
+        />
+
+    <Button
+        android:id="@+id/signup_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primaryColor"
+        android:text="SIGN UP AS A TEAHCER"
+        android:textColor="#ffffff"
+        />
+
+
+    <!-- kudos,  WE ARE NOT USING SINGUP WITH GOOGLE ARE THERE IS NO IMPLEMENTATION FOR IT -->
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="horizontal"
+        android:orientation="horizontal">
 >
 
         <TextView
@@ -134,6 +118,7 @@
             android:layout_height="wrap_content"
             android:textSize="15dp"
             android:text="Already Registered?"/>
+
         <Button
             android:id="@+id/signin"
             android:layout_width="wrap_content"
@@ -141,11 +126,7 @@
             android:backgroundTint="@color/primaryColor"
             android:text="SIGN IN"
             android:textColor="#ffffff"
-            app:layout_constraintBottom_toBottomOf="@+id/signup_btn_signupgoogle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/signup_btn_signupgoogle"
-            app:layout_constraintTop_toTopOf="@+id/signup_btn_signupgoogle" />
+            />
 
     </LinearLayout>
 
